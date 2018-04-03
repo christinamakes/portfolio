@@ -1,0 +1,49 @@
+/* BODY STYLES */
+body {
+  box-sizing: border-box;
+  padding: 2rem; 
+  font-family: "brandon-grotesque",sans-serif;
+  font-weight: 900;
+  line-height: 1.7;
+  color: #000 
+}
+
+/* PAGE CONTAINER FLEX */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVBAR UL */
+.navbar {
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+/* SECTION ELEMENT */
+.section {
+  font-family: inherit;
+  margin: 0 1.25rem;
+}
+
+/* TOP SECTION */
+.topbits {
+  background-color: yellow;
+}
+
+/* MIDDLE SECTION */
+.about {
+  background-color: red;
+}
+
+/* BOTTOM SECTION */
+.projects {
+  background-color: blue;
+}
+
+/* FOOTER */
+footer {
+  background-color: purple;
+}
