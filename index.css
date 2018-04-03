@@ -8,63 +8,64 @@ body {
   color: #000;
 }
 
-/* PAGE CONTAINER FLEX */
+/* LAYOUT */
 .container {
   display: flex;
+}
+.sidebar {
+  font-weight: 900;
+  flex: 0 0 10vw;
+  display: flex;
   flex-direction: column;
+  position: relative;
 }
-
-.nav-container {
-  position: fixed; 
-  top: 0;
-  background-color: red;
-
-}
-
-
-/* NAVBAR UL */
-.navbar {
-  background-color: green;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
+.sidebar ul {
+  position: fixed;
   -webkit-padding-start: 0;
-  font-size: 1rem;
+  -webkit-margin-start: 0;
+  -webkit-margin-before: 0;
 }
-
-.left-nav {
+.content {
   flex: 1;
-  margin: 0;
-}
-
-.right-nav {
-  flex: 0 0 15rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
-.navbar a {
+
+/* NAVBAR */
+
+.sidebar .home {
+    padding: 0 41px;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  padding-bottom: 10px;
+}
+
+.nav a {
+  /* padding-bottom: 2rem; */
   position: relative;
   color: #000;
   text-decoration: none;
 }
 
-.navbar a:after {
+.nav a:after {
   content: '';
   position: absolute;
-  bottom: -8px;
+  bottom: 6px;
   left: 0;
   width: 0%;
-  border-bottom: 6px solid #3366FF;
+  border-bottom: 8px solid rgba(51, 102, 255, 0.692);
   transition: 0.3s ease-in-out;
 }
 
-.navbar a:hover:after {
+.nav a:hover:after {
   width: 100%
-}
-
-.navbar a:hover {
-  color: gray;
 }
 
 
@@ -101,7 +102,7 @@ body {
 }
 
 /* FOOTER */
-footer {
+.contact {
   background-color: purple;
 
    /* REMOVE HEIGHT */
