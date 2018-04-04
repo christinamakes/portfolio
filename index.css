@@ -1,3 +1,5 @@
+
+
 /* BODY STYLES */
 body {
   box-sizing: border-box;
@@ -12,6 +14,7 @@ body {
 .container {
   display: flex;
 }
+
 .sidebar {
   font-weight: 900;
   flex: 0 0 10vw;
@@ -36,7 +39,7 @@ body {
 /* NAVBAR */
 
 .sidebar .home {
-    padding: 0 41px;
+  padding: 0 41px;
 }
 
 .nav {
@@ -60,7 +63,7 @@ body {
   bottom: 6px;
   left: 0;
   width: 0%;
-  border-bottom: 8px solid rgba(51, 102, 255, 0.692);
+  border-bottom: 8px solid rgba(0, 0, 0, 0.692);
   transition: 0.3s ease-in-out;
 }
 
@@ -80,7 +83,7 @@ body {
 /* TOP SECTION */
 .topbits {
   background-color: palegoldenrod;
-
+  
   /* REMOVE HEIGHT */
   height: 80vh;
 }
@@ -88,7 +91,7 @@ body {
 /* MIDDLE SECTION */
 .about {
   background-color: orangered;
-
+  
   /* REMOVE HEIGHT */
   height: 40vw;
 }
@@ -96,15 +99,58 @@ body {
 /* BOTTOM SECTION */
 .projects {
   background-color: blue;
-
-   /* REMOVE HEIGHT */
-   height: 40vw;
+  
+  /* REMOVE HEIGHT */
+  height: 40vw;
 }
 
 /* FOOTER */
 .contact {
   background-color: purple;
-
-   /* REMOVE HEIGHT */
-   height: 40vw;
+  
+  /* REMOVE HEIGHT */
+  height: 40vw;
 }
+
+
+/* MEDIA QUERIES */
+
+
+/* Extra Small Devices, Phones */ 
+  @media only screen and (max-width : 830px) {
+    body {
+      padding: 1rem;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar {
+      position: static;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .sidebar ul {
+      position: static;
+    }
+
+    .content {
+    }
+
+    .sidebar .home {
+      padding: 0 0px;
+    }
+    
+    .nav li {
+      padding-bottom: 0px;
+    }
+
+  }
+
