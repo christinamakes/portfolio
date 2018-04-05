@@ -1,9 +1,7 @@
-
-
 /* BODY STYLES */
 body {
   box-sizing: border-box;
-  padding: 2rem; 
+  padding: 2rem;
   font-family: "Archivo-narrow", sans-serif;
   font-weight: 400;
   line-height: 1.7;
@@ -35,7 +33,6 @@ body {
   flex-wrap: nowrap;
 }
 
-
 /* NAVBAR */
 
 .sidebar .home {
@@ -58,7 +55,7 @@ body {
 }
 
 .nav a:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 6px;
   left: 0;
@@ -68,9 +65,8 @@ body {
 }
 
 .nav a:hover:after {
-  width: 100%
+  width: 100%;
 }
-
 
 /* SECTION ELEMENT */
 .section {
@@ -83,7 +79,7 @@ body {
 /* TOP SECTION */
 .topbits {
   background-color: palegoldenrod;
-  
+
   /* REMOVE HEIGHT */
   height: 80vh;
 }
@@ -91,66 +87,121 @@ body {
 /* MIDDLE SECTION */
 .about {
   background-color: orangered;
-  
+
   /* REMOVE HEIGHT */
   height: 40vw;
 }
 
 /* BOTTOM SECTION */
 .projects {
-  background-color: blue;
-  
-  /* REMOVE HEIGHT */
-  height: 40vw;
+  font-family: "Times New Roman", Times, serif;
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* FOOTER */
 .contact {
   background-color: purple;
-  
+
   /* REMOVE HEIGHT */
   height: 40vw;
 }
 
+/* SINGLE PROJECT */
+
+.single-project {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+  flex: 1 0 100%;
+}
+
+.project-image {
+  height: 13rem;
+}
+
+.project-title {
+  font-family: inherit;
+  font-size: 2rem;
+}
+
+.project-description {
+  font-family: inherit;
+  font-size: 1rem;
+}
 
 /* MEDIA QUERIES */
 
-
-/* Extra Small Devices, Phones */ 
-  @media only screen and (max-width : 830px) {
-    body {
-      padding: 1rem;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .sidebar {
-      position: static;
-    }
-
-    .nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-
-    .sidebar ul {
-      position: static;
-    }
-
-    .content {
-    }
-
-    .sidebar .home {
-      padding: 0 0px;
-    }
-    
-    .nav li {
-      padding-bottom: 0px;
-    }
-
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 830px) {
+  body {
+    padding: 1rem;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .sidebar ul {
+    position: static;
+  }
+
+  .content {
+  }
+
+  .sidebar .home {
+    padding: 0 0px;
+  }
+
+  .nav li {
+    padding-bottom: 0px;
+  }
+
+  .projects {
+    font-family: "Times New Roman", Times, serif;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .single-project {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    flex: 1 0 100%;
+  }
+
+  .project-image {
+    flex: 0 0 50%;
+
+    /* CHANGE THIS!!! */
+    /* width: 220px; */
+  }
+
+  .project-title {
+    flex: 1;
+    order: -2;
+    font-family: inherit;
+    font-size: 2rem;
+  }
+
+  .project-description {
+    order: -1;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+}
