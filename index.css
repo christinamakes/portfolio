@@ -2,10 +2,14 @@
 body {
   box-sizing: border-box;
   padding: 1.5rem;
-  font-family: "Archivo-narrow", sans-serif;
+  font-family: 'Archivo-narrow', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #000;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* LAYOUT */
@@ -57,7 +61,7 @@ body {
 }
 
 .nav a:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 6px;
   left: 0;
@@ -94,7 +98,8 @@ body {
 
 /* BOTTOM SECTION */
 .projects {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Archivo-Narrow', sans-serif;
+  font-weight: 600;
   /* background-color: yellow; */
   display: flex;
   flex-direction: row;
@@ -121,7 +126,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   flex: 1 0 100%;
-  border-bottom: 1px solid black;
   margin-bottom: 2rem;
 }
 
@@ -130,27 +134,43 @@ body {
   /* background-color: red; */
 }
 
-.project-image {
-  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+.project-image a {
+  max-width: 40rem;
+  max-height: 40rem;
+  object-fit: cover;
+}
 
-  object-fit: contain;
-  max-width: 60rem;
+.project-image {
+  /* -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+  flex: 1;
+  max-width: 40rem;
+  object-fit: cover;
   max-height: 40rem;
 }
 
 .project-title {
-  border: 1px solid black;
-
+  margin: 0;
   font-family: inherit;
   font-size: 2rem;
 }
 
 .project-description {
-  border: 1px solid black;
-
+  font-weight: 400;
   font-family: inherit;
   font-size: 1rem;
+}
+
+.project-links {
+  text-align: center;
+}
+
+.project-links > a {
+  padding: 0 1rem;
+}
+
+.project-links img {
+  max-width: 30px;
 }
 
 /* MEDIA QUERIES */
@@ -192,7 +212,6 @@ body {
   }
 
   .projects {
-    font-family: "Times New Roman", Times, serif;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -201,16 +220,21 @@ body {
   .single-project {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid black;
+    flex-wrap: wrap;
     flex: 1 0 100%;
+  }
+
+  .project-content {
+    flex: 1;
   }
 
   .project-image {
     clip-path: none;
-    flex: 0 0 50%;
+    flex: 0 0 100%;
   }
 
   .project-title {
+    text-align: center;
     flex: 1;
     order: -2;
     font-family: inherit;
