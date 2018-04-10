@@ -1,0 +1,83 @@
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 830px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .sidebar ul {
+    position: static;
+  }
+
+  .content {
+  }
+
+  .sidebar .home {
+    padding: 0 0px;
+  }
+
+  .nav li {
+    padding-bottom: 0px;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .single-project {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 0 100%;
+  }
+
+  .project-words {
+    flex: 0 0 100%;
+    order: -1;
+  }
+
+  .project-image {
+    /* clip-path: none; */
+    /* max-width: 89vw; */
+  }
+
+  .project-title {
+    text-align: center;
+    flex: 1;
+    order: -2;
+    font-family: inherit;
+    font-size: 2rem;
+  }
+
+  .project-description {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    min-width: unset;
+    max-width: unset;
+    order: -1;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+
+  .sidebar-links {
+    display: none;
+  }
+}
