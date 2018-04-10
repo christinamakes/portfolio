@@ -4,14 +4,14 @@ body {
   font-family: 'Archivo-narrow', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #000;
+  color: rgb(27, 27, 27);
 }
 
 a {
   text-decoration: none;
 }
 
-/* LAYOUT */
+/* ******** LAYOUT ******** */
 .container {
   display: flex;
 }
@@ -33,7 +33,7 @@ a {
 
 /* TOP SECTION */
 .topbits {
-  background-color: palegoldenrod;
+  background-color: papayawhip;
   height: 90vh;
 }
 
@@ -58,4 +58,30 @@ a {
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  background-color: rgb(27, 27, 27);
+}
+
+/* GENERAL STYLES */
+.section-title {
+  width: 15vw;
+  margin: 1rem 0;
+  padding: 0;
+  height: 3.5rem;
+  background-color: rgb(27, 27, 27);
+  /* background-color: goldenrod; */
+  color: white;
+}
+
+/* first title selector */
+.section-title:last-of-type{
+  width: auto;
+  margin-bottom: 0;
+}
+
+.section-title h1 {
+  /* margin: 0 0 0 5.8rem; */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 2rem;
 }
