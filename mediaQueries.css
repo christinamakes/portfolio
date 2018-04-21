@@ -1,5 +1,25 @@
-/* Extra Small Devices, Phones */
-/* FIX PICTURE ISSUE AT 1200px */
+/* 1200px */
+@media only screen and (max-width: 1200px) {
+  .single-project img {
+    max-height: 25rem;
+  }
+
+  .project-description {
+    font-weight: 400;
+    font-family: inherit;
+    font-size: 1rem;
+    width: 80vw;
+    line-height: 2rem;
+    align-self: left;
+  }
+
+  .project-links {
+    padding-bottom: 1rem;
+  }
+}
+
+
+/* 800px */
 @media only screen and (max-width: 800px) {
   body {
     padding: 1rem;
@@ -14,17 +34,18 @@
     position: static;
   }
 
+  .sidebar {
+    padding-left: 0;
+  }
+
   .nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .sidebar ul {
     position: static;
-  }
-
-  .content {
   }
 
   .sidebar .home {
@@ -51,11 +72,6 @@
   .project-words {
     flex: 0 0 100%;
     order: -1;
-  }
-
-  .project-image {
-    /* clip-path: none; */
-    /* max-width: 89vw; */
   }
 
   .project-title {
