@@ -33,8 +33,7 @@ a {
 
 /* TOP SECTION */
 .topbits {
-  background-color: papayawhip;
-  height: 90vh;
+  height: 50vh;
 }
 
 /* MIDDLE SECTION */
@@ -89,6 +88,6 @@ a {
 }
 
 .section-title:last-of-type h1 {
-  padding-left: 3rem;
+  padding-left: 1rem;
   text-align: left;
 }

@@ -1,0 +1,25 @@
+.topbits {
+  background-color: rgb(27, 27, 27);
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top-text {
+  text-align: left;
+  margin-left: 2rem;
+  color: white;
+}
+
+.top-text h1 {
+
+  font-size: 7vw;
+  : 8rem;
+
+}
+
+.top-text p {
+  margin-top: -5rem;
+  margin-left: 1.5rem;
+  font-size: 2vw;
+}
