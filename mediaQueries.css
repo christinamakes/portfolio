@@ -1,3 +1,10 @@
+/* 1440px */
+@media only screen and (min-width: 1200px) {
+  .top-text h1 {
+    font-size: 6rem;
+  }
+}
+
 /* 1200px */
 @media only screen and (max-width: 1200px) {
   .single-project img {
@@ -18,27 +25,30 @@
   }
 
   .top-text p {
-    margin-top: 0;
+    margin-top: -2rem;
   }
 }
 
 
 /* 800px */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 765px) {
   body {
     padding: 1rem;
   }
 
   .topbits {
-    margin-top: .5rem;
+    margin-top: 1rem;
+    height: auto;
+    margin-top: 2rem;
   }
 
   .top-text h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .top-text p {
-    margin-left: 0;
+    margin-top: -2rem;
+    margin-left: -.5rem;
     font-size: 1rem;
   }
 

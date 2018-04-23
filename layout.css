@@ -33,7 +33,9 @@ a {
 
 /* TOP SECTION */
 .topbits {
-  height: 50vh;
+  height: auto;
+  padding-bottom: 1rem;
+  margin-top: -4rem;
 }
 
 /* MIDDLE SECTION */
