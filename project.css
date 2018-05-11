@@ -27,6 +27,14 @@
   object-fit: contain;
 }
 
+.project-image:hover {
+  position: relative;
+  bottom: 2px;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.1);
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.1);
+}
+
 .project-words {
   /* background-color: tan; */
   order: -1;
@@ -71,9 +79,27 @@
   flex-direction: column;
   align-items: center;
   padding: 0 1rem;
-  color: black;
+  color: rgb(27, 27, 27);;
+}
+
+.project-links > a:hover {
+  position: relative;
+  bottom: 2px;
 }
 
 .project-links img {
   max-width: 30px;
+}
+
+.project-links .visit {
+  color: #9a20d3;
+}
+
+.project-links .visit img {
+  max-width: 35px;
+}
+
+.visit_title {
+  text-decoration: none;
+  color: rgb(27, 27, 27);
 }
